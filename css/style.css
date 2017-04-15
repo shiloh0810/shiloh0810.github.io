@@ -1,0 +1,23 @@
+body {
+	background-color: white;
+	padding-top: 80px;
+	padding-left: 20px;
+}
+.right {
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px white;
+}
+.block {
+	background-color:black;
+	color:white;
+	padding:20px;
+}
+.line{
+	color: #73AD21;
+}
+.nav{
+	background-color:black;
+	color:white;
+}
