@@ -1,93 +1,173 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="shortcut icon" href="css/bb8.jpg" type="image/x-icon" />
-	<meta charset="utf-8">
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<title>Shiloh's page</title>
-</head>
-<body>
-	<nav class="navbar navbar-default navbar-fixed-top nav" role="navigation">
-	  <div class="container">
-	    <div class="row">
-	    	<div class="col-md-8">
-	    		<h1>Hi, Guys! This is Shiloh's website :)</h1>
-	    	</div>
-	    	<div class="col-md-2">
-	    		<hr>
-	    		<a href="#Interests" type="button" class="btn btn-link">Interests</a>
-	    	</div>
-	    	<div class="col-md-2">
-	    		<hr>
-	    		<a href="#Projects" type="button" class="btn btn-link">Projects</a>
-	    	</div>
-	    </div>
-	  </div>
-	</nav>
-	<div class="container"> <!-- container 在最外層 -->
-	  <div class="row">     <!-- row 在中間 -->
-	    <div class="col-md-4">
-	    	<h1>Hi! I'm Shiloh.</h1>
-	    	<h2>Welcome to my website! I love to dig in literally everything! Challenges are superb for me!</h2>
-	    	<h3 id="Interests">P.S. I really love BB8 in the Star Wars series--The Force Awakens.</h3>
-	    </div> <!-- 這欄佔4格寬 -->
-	    <div class="col-md-1"></div>
-	    <div class="col-md-5">
-	    	<img src="http://vignette2.wikia.nocookie.net/starwars/images/6/68/BB8-Fathead.png/revision/latest?cb=20161108050455" alt="face" style="width:280px;height:400px;">
-	    </div> <!-- 這欄佔6格寬 -->
-	    <div class="col-md-2">
-	    	<hr><hr><hr><hr><hr>
-	    	<a href="http://howbb8works.com/" target="_blank" type="button" class="btn btn-warning btn-lg">More about BB8</a>
-	    </div> <!-- 這欄佔2格寬 -->
-	  </div>
-	</div>
-	<hr>
-	<div class="right">
-  		<h2>My Interests</h2>
-	</div>
-	<hr class="line">
-	<div class="container">
-		<div class="row">
-			<div class="block col-md-6">
-				<ol>
-					<h2>Play cello</h2>
-					<h2>Swimming</h2>
-					<h2>Coding</h2>
-				</ol>
+	<head>
+		<link rel="shortcut icon" href="css/bb8.jpg" type="image/x-icon" />
+		<meta charset="utf-8">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/code.jquery.com"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<title>Shiloh's page</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h1>Hi, Guys! This is Shiloh's website :)</h1>
+					</div>
+					<div class="col-md-4">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#Interests">Interests</a></li>
+									<li><a href="#Projects">Projects</a></li>
+									<li><a href="#Schools">Schools</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a data-toggle="modal" data-target="#myModal">Click for Surprise!</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<img src="css/Cello.jpg">
-				<img src="css/swim.jpeg" style="width:300px; height:200px">
-				<img src="css/coding.jpg" style="width:300px; height:200px">
+		</nav>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Music Time!</h4>
+					</div>
+					<div class="modal-body">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/JGulAZnnTKA" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<hr class="line">
-	<hr>
-	<div class="right">
-  		<h2 id="Projects">Projects</h2>
-	</div>
-	<hr class="line">
-	<div class="container">
-		<div class="row">
-			<div class="block col-md-6">
-				<h2>Secret of the Treehouse</h2>
-				<a href="https://scratch.mit.edu/projects/114193537/" target="_blank" >
-					<img src="css/treehouse.png" alt="treehouse" style="width:380px;height:210px;">
-				</a>
-				<p>This is the project I did when I first used Scratch and was beginnning to learn coding.</p>
-			</div>
-			<div class="block col-md-6">
-				<h2>Tower Defense</h2>
-				<a href="https://shiloh0810.github.io/01142017/" target="_blank" >
-					<img src="css/towerdefense.png" alt="towerdense" style="width:380px;height:210px;">
-				</a>
-				<p>This is the project that was written in java script. I added lots of cool functions!</p>
+		<div class="modal fade" id="bb8Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">More about BB8</h4>
+					</div>
+					<div class="modal-body">
+						<h4>BB-8 (or Beebee-Ate) is a droid character in the Star Wars franchise, first appearing in the 2015 film Star Wars: The Force Awakens. Spherical with a free-moving domed head, BB-8 is portrayed by both a rod puppet and a remote-controlled robotic unit. There is even a 3D BB8 toy on sale!</h6>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	
-	<hr class="line">
-</body>
+		<div class="modal fade" id="celloModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Joseph Haydn Konzert in C</h4>
+					</div>
+					<div class="modal-body">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/eU5KdY_04kU" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1>Hi! I'm Shiloh.</h1>
+					<h2>Welcome to my website! I love to dig in literally everything! Challenges are superb for me!</h2>
+					<h3 id="Interests">P.S. I really love BB8 in the Star Wars series--The Force Awakens.</h3>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<img src="http://vignette2.wikia.nocookie.net/starwars/images/6/68/BB8-Fathead.png/revision/latest?cb=20161108050455" alt="face" style="width:280px;height:400px;">
+				</div>
+				<div class="col-md-2">
+					<hr><hr><hr><hr><hr>
+					<a data-toggle="modal" data-target="#bb8Modal" target="_blank" type="button" class="btn btn-warning btn-lg">More about BB8</a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="right">
+			<h2>My Interests</h2>
+		</div>
+		<hr class="line">
+		<div class="container">
+			<div class="row">
+				<div class="block col-md-6">
+					<ol>
+						<h2>Play cello</h2>
+						<h2>Swimming</h2>
+						<h2>Coding</h2>
+					</ol>
+				</div>
+				<div class="col-md-6">
+					<img src="css/Cello.jpg">
+					<img src="css/swim.jpeg" style="width:300px; height:200px">
+					<img src="css/coding.jpg" style="width:300px; height:200px">
+					<button type="button" class="btn btn-primary btn-lg btn-warning" data-toggle="modal" data-target="#celloModal">
+					My Cello Contest Song
+					</button>
+				</div>
+			</div>
+		</div>
+		<hr class="line">
+		<hr>
+		<div class="right">
+			<h2 id="Projects">Projects</h2>
+		</div>
+		<hr class="line">
+		<div class="container">
+			<div class="row">
+				<div class="block col-md-6">
+					<h2>Secret of the Treehouse</h2>
+					<a href="https://scratch.mit.edu/projects/114193537/" target="_blank" >
+						<img src="css/treehouse.png" alt="treehouse" style="width:380px;height:210px;">
+					</a>
+					<hr><hr>
+					<p>This is the project I did when I first used Scratch and was beginnning to learn coding.</p>
+				</div>
+				<div class="block col-md-6">
+					<h2>Tower Defense</h2>
+					<a href="https://shiloh0810.github.io/01142017/" target="_blank" >
+						<img src="css/towerdefense.png" alt="towerdense" style="width:380px;height:210px;">
+					</a>
+					<hr><hr>
+					<p id="Schools">This is the project that was written in java script. I added lots of cool functions!</p>
+				</div>
+			</div>
+		</div>
+		<hr class="line">
+		<hr>
+		<div class="right">
+			<h2>My Dream School</h2>
+		</div>
+		<hr class="line">
+		<div class="container">
+			<div class="row">
+				<div class="block col-md-6">
+					<h2>Phillips Exeter Academy</h2>
+					<a href="http://www.exeter.edu/" target="_blank" >
+						<img src="css/Exeter.jpg" alt="Exeter" style="width:380px;height:280px;">
+					</a>
+				</div>
+				<div class="block col-md-6">
+					<br><br><br>
+					<h3>Phillips Exeter Academy is ranked the number one high school in the USA!</h3>
+				</div>
+				<div class="block col-md-6">
+					<h3>Harkness Table</h3>
+					<img src="css/Harkness.jpg" alt="Harkness" style="width:380px;height:210px;">
+					<p>This is very different from Asian schools, and we can exploit our potential a lot more during discussion with my classmates rather than in lectures. Students sometimes have extraordianry ideas.</p>
+				</div>
+				<div class="block col-md-6">
+					<img src="css/library.jpg" alt="library" style="width:380px;height:210px;">
+					<h3>The Largest Library</h3>
+					<p>Reading is very,very important in our learning. We need reading during research and during our leisure time. I will definitely need all of the books here in Exeter! I love all kinds of genres, including novels and scientific textbooks.</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

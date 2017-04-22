@@ -13,6 +13,8 @@ body {
 	background-color:black;
 	color:white;
 	padding:20px;
+	width: 500px;
+	height: 500px;
 }
 .line{
 	color: #73AD21;
