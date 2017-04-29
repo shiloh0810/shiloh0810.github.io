@@ -25,7 +25,6 @@
 									<li><a href="#Projects">Projects</a></li>
 									<li><a href="#Schools">Schools</a></li>
 									<li role="separator" class="divider"></li>
-									<li><a data-toggle="modal" data-target="#myModal">Click for Surprise!</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -33,19 +32,6 @@
 				</div>
 			</div>
 		</nav>
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">Music Time!</h4>
-					</div>
-					<div class="modal-body">
-						<iframe width="854" height="480" src="https://www.youtube.com/embed/JGulAZnnTKA" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="modal fade" id="bb8Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
@@ -55,6 +41,7 @@
 					</div>
 					<div class="modal-body">
 						<h4>BB-8 (or Beebee-Ate) is a droid character in the Star Wars franchise, first appearing in the 2015 film Star Wars: The Force Awakens. Spherical with a free-moving domed head, BB-8 is portrayed by both a rod puppet and a remote-controlled robotic unit. There is even a 3D BB8 toy on sale!</h6>
+						<a href="http://howbb8works.com/" target="_blank">3D BB8 Robot</a>
 					</div>
 				</div>
 			</div>
@@ -86,6 +73,17 @@
 				<div class="col-md-2">
 					<hr><hr><hr><hr><hr>
 					<a data-toggle="modal" data-target="#bb8Modal" target="_blank" type="button" class="btn btn-warning btn-lg">More about BB8</a>
+					<hr>
+					Name: <input type=”text”/ id="Name" class="form-control">
+					Age: <input type=”text”/ id="Age" class="form-control">
+					<h4>What do you like for sandwich?</h4>
+					<input id="one-checkbox" type="checkbox" value="lettuce"/> Lettuce
+					<br>
+					<input id="two-checkbox" type="checkbox" value="beef"/> Beef
+					<br>
+					<input id="three-checkbox" type="checkbox" value="cheese"/> Cheese
+					<hr>
+					<a input type="button" class="btn btn-danger" id="btn">Hello</a>
 				</div>
 			</div>
 		</div>
@@ -113,10 +111,10 @@
 				</div>
 			</div>
 		</div>
-		<hr class="line">
+		<hr class="line" id="Projects">
 		<hr>
 		<div class="right">
-			<h2 id="Projects">Projects</h2>
+			<h2>Projects</h2>
 		</div>
 		<hr class="line">
 		<div class="container">
@@ -169,5 +167,6 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>
