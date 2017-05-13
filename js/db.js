@@ -17,6 +17,10 @@ studentCollection.load();
 function afterload() {
     var students = studentCollection.find();
     console.log(students);
+    for (var i = 0; i < students.length; i++) {
+    	console.log(students[i]._id);
+    	$("#studentsTable").append("<tr><td>"+i+"</td><td>"+students[i].name+"</td></tr>")
+    }
 }
 
 setTimeout(afterload, 1000);
