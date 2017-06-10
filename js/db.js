@@ -15,7 +15,7 @@ var studentCollection = db.collection('students');
 studentCollection.load();
 
 function createHTMLString(_id, name) {
-    return "<tr><td class='studentsId'>" + _id + "</td><td>" + name + "</td><td><button class='deleteButton btn btn-primary' data-id='"+_id+"' >刪除</button></td></tr>";
+    return "<tr><td class='studentsId'>" + _id + "</td><td>" + name + "</td><td><button class='deleteButton btn btn-primary' data-id='" + _id + "' >刪除</button></td></tr>";
 }
 
 function afterload() {
@@ -54,10 +54,10 @@ $("#submit").click(function() {
 
 })
 
-function deleteData(){
+function deleteData() {
     var r = confirm("Are you sure you want to delete?");
-    if(r){
-        var id= $(this).attr("data-id");
+    if (r) {
+        var id = $(this).attr("data-id");
         studentCollection.remove({
             _id: id,
         })
