@@ -14,11 +14,15 @@ var studentCollection = db.collection('students');
 
 studentCollection.load();
 
+function createHTMLString(_id, name) {
+    return "<tr><td class='studentsId'>" + _id + "</td><td>" + name + "</td><td><button class='deleteButton btn btn-primary' data-id='"+_id+"' >刪除</button></td></tr>";
+}
+
 function afterload() {
     var students = studentCollection.find();
     console.log(students);
     for (var i = 0; i < students.length; i++) {
-        $("#studentsTable").append("<tr><td class='studentsId'>" + students[i]._id + "</td><td>" + students[i].name + "</td></tr>")
+        $("#studentsTable").append(createHTMLString(students[i]._id, students[i].name))
     };
     $("#studentsTable").on("click", ".studentsId", function() {
         var studentId = $(this).text();
@@ -44,9 +48,23 @@ $("#submit").click(function() {
     studentCollection.insert(newStudent);
     studentCollection.save();
     var students = studentCollection.find(newStudent)[0];
-    $("#studentsTable").append("<tr><td class='studentsId'>" + students._id + "</td><td>" + students.name + "</td></tr>")
+    $("#studentsTable").append(createHTMLString(students._id, students.name));
     $("#name").val("");
     $("#age").val("");
-    
+
 })
+
+function deleteData(){
+    var r = confirm("Are you sure you want to delete?");
+    if(r){
+        var id= $(this).attr("data-id");
+        studentCollection.remove({
+            _id: id,
+        })
+        studentCollection.save();
+        $(this).parents("tr").remove();
+    }
+}
+
+$("#studentsTable").on("click", ".deleteButton", deleteData)
 setTimeout(afterload, 1000);
