@@ -15,23 +15,24 @@
 		Name: <input type="text" id="name">
 		Age: <input type="text" id="age">
 		<button class="btn btn-primary" id="submit">Submit</button>
+		<br>
+		年齡大於： <input type="text" id="gt">
+		年齡小於： <input type="text" id="lt">
+		<button class="btn btn-info" id="search">Search</button>
+		<br>
 		<table class="table table-hover">
 			<thead>
 				<tr>
 					<td>id</td>
 					<td>姓名</td>
+					<td>年齡</td>
 					<td>操作</td>
 				</tr>
 			</thead>
 			<tbody id="studentsTable">
-				<td>1</td>
-				<td>Orange</td>
-				<td>
-					<button class="updateButton btn btn-warning">修改</button>
-					<button class="deleteButton btn btn-primary">刪除</button>
-				</td>
 			</tbody>
 		</table>
+		<button class="btn btn-danger btn-lg" id="showAll">Show All</button>
 		<div class="modal fade" tabindex="-1" role="dialog" id="studentsInfo">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
