@@ -26,7 +26,10 @@
 			<tbody id="studentsTable">
 				<td>1</td>
 				<td>Orange</td>
-				<td><button class="deleteButton btn btn-primary">刪除</button></td>
+				<td>
+					<button class="updateButton btn btn-warning">修改</button>
+					<button class="deleteButton btn btn-primary">刪除</button>
+				</td>
 			</tbody>
 		</table>
 		<div class="modal fade" tabindex="-1" role="dialog" id="studentsInfo">
@@ -40,9 +43,30 @@
 						<p>Name: <span id="inside-name"></span></p>
 						<p>Age: <span id="inside-age"></span></p>
 					</div>
-					</div><!-- /.modal-content -->
-					</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-					<script type="text/javascript" src="js/db.js"></script>
-				</body>
-			</html>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">修改資料</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Name: <input type="text" name="" id="updateName">
+						Age: <input type="text" name="" id="updateAge">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" id="save">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/db.js"></script>
+	</body>
+</html>
