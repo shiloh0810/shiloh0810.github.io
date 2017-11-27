@@ -11,7 +11,7 @@ function hello() {
     if ($("#three-checkbox").prop("checked")) {
         like += " " + $("#three-checkbox").val();
     }
-    alert("Hello, " + Age + "-year-old " + Name + ". You like" + like + " sandwich!");
+    alert("Hello, " + Age + "-year-old " + Name + ". Your" + like + " sandwich is ready!");
     $("#Name").val("");
     $("#Age").val("");
     $("#one-checkbox").prop("checked", false);
